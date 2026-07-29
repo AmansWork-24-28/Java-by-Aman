@@ -10,7 +10,7 @@ class Dog extends Animal{
     }
 }
 
-class Inheritance{
+class TypesOfInheritance {
     public static void main(String[] args) {
         System.out.println("INHERITANCE");
         
