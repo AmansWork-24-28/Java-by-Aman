@@ -1,0 +1,144 @@
+ Java Packages
+
+ What is a Package?
+
+A package in Java is a collection of related classes and interfaces. It is used to organize Java files, just like folders are used to organize files on a computer.
+
+Real-Life Example
+
+Think of your computer:
+
+Documents
+│
+├── College
+├── Photos
+└── Music
+
+Here, each folder stores related files.
+
+Similarly, in Java:
+
+
+Project
+│
+├── mypack
+│     └── Calculator.java
+│
+└── Main.java
+
+
+The `mypack` package stores the `Calculator` class.
+
+---
+
+Why Do We Use Packages?
+Organize Java classes.
+Avoid class name conflicts.
+Make code easier to maintain.
+Improve code reusability.
+
+
+Types of Packages
+
+1. Built-in Packages
+
+These packages are provided by Java.
+
+Example:
+
+java
+import java.util.Scanner;
+import java.util.ArrayList;
+
+
+2. User-Defined Packages
+
+These packages are created by the programmer.
+
+Example:
+
+java
+package mypack;
+
+Example
+
+Calculator.java
+
+```java
+package mypack;
+
+public class Calculator {
+
+    public void add(int a, int b) {
+        System.out.println("Addition = " + (a + b));
+    }
+}
+```
+
+Main.java
+
+```java
+import mypack.Calculator;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Calculator obj = new Calculator();
+        obj.add(10, 20);
+
+    }
+}
+```
+
+Output
+
+
+Addition = 30
+
+How It Works
+
+1. Create a package.
+
+```java
+package mypack;
+```
+
+2. Create classes inside the package.
+
+3. Import the package into another class.
+
+```java
+import mypack.Calculator;
+```
+
+4. Create an object and use its methods.
+
+```java
+Calculator obj = new Calculator();
+obj.add(10, 20);
+```
+
+
+Folder Structure
+
+Project
+│
+├── mypack
+│     └── Calculator.java
+│
+└── Main.java
+
+Key Points
+
+* A package is like a folder in Java.
+* It groups related classes together.
+* Use the `package` keyword to create a package.
+* Use the `import` keyword to use classes from another package.
+* Packages help organize code and prevent naming conflicts.
+
+---
+
+Summary
+
+Packages make Java projects clean, organized, and easy to manage. They are especially useful in large applications where many classes are used.
