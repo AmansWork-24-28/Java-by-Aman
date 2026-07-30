@@ -16,7 +16,7 @@ class C extends A{
     }
 }
 
-class Main {
+class DynamicMethodDispatch {
     public static void main(String[] args) {
         System.out.println("Dynamic method dispatch ");
         
@@ -28,5 +28,7 @@ class Main {
         
         oj = new C();
         oj.show();
+        
+        // Animal a = new Dog();
     }
 }
