@@ -22,7 +22,7 @@ class Dog extends Animal {
     }
 }
 
-public class Main {
+public class this_super {
     public static void main(String[] args) {
 
         Dog d = new Dog();
