@@ -13,7 +13,7 @@ class Outer{
     }
 }
 
-class InnerClass{ 
+class InnerClass { 
     public static void main(String[] args) {
         System.out.println("Inner Class");
         
