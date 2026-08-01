@@ -1,3 +1,7 @@
+
+// 1. Abstract method → Abstract class is compulsory.
+// 2.Abstract class → Abstract method is NOT compulsory.
+
 abstract class Car{ // abstract keyword
     public void race(){
         System.out.println("Fast and Furious");
@@ -13,7 +17,7 @@ class Gwagon extends Car{
 }
 
 
-class AbstractKeyword{ {
+class AbstractKeyword {
     public static void main(String[] args) {
         System.out.println("Abstract keyword");
         
