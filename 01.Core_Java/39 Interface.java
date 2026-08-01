@@ -1,11 +1,19 @@
+// class - class -> extends
+// class - interface -> implements
+// interface - interface -> extends
+
 interface Computer{
     void code();
     int a = 5;
     // int a; X
 }
+interface X{
+    void sample();
+    
+}
 
-class Laptop implements Computer{
-    public void code(){
+class Laptop implements Computer,X{ // can implement multiple interfaces
+    public void code(){ 
         System.out.println("In lap");
     }
 }
