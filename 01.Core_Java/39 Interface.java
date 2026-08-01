@@ -16,6 +16,9 @@ class Laptop implements Computer,X{ // can implement multiple interfaces
     public void code(){ 
         System.out.println("In lap");
     }
+    public void sample(){
+        System.out.println("In sample");
+    }
 }
 
 class Desktop implements Computer{
@@ -33,6 +36,9 @@ class Interface {
         
         l.code();
         d.code();
+
+        X x = new Laptop();
+        x.sample();
         
     }
 }
