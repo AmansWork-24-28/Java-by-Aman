@@ -1,0 +1,51 @@
+Java Annotations — Quick Revision
+
+Annotation in Java is a metadata/information added to code. It does not directly execute any logic, but it gives information to the compiler, JVM, or frameworks.
+
+Annotations start with @.
+
+Common Annotations
+@Override → Tells the compiler that a method is overriding a parent-class method.
+@Deprecated → Indicates that a method/class should no longer be used.
+@SuppressWarnings → Tells the compiler to ignore specific warnings.
+@FunctionalInterface → Ensures an interface has exactly one abstract method.
+Example
+class A {
+    void show() {
+        System.out.println("A");
+    }
+}
+
+class B extends A {
+
+    @Override
+    void show() {
+        System.out.println("B");
+    }
+}
+
+Here, @Override tells Java:
+
+"The show() method below is supposed to override a method from the parent class."
+
+If you make a mistake, the compiler can detect it.
+
+Why Annotations are Important
+
+Annotations are heavily used in frameworks such as Spring/Spring Boot:
+
+@Component
+@Service
+@RestController
+@Autowired
+@Entity
+
+They allow frameworks to understand what a class or method is supposed to do without writing lots of configuration code.
+
+Remember
+
+Annotation = Metadata about your code
+
+@Override → compiler
+@Deprecated → compiler/developer warning
+@Component, @Service, @RestController → frameworks like Sprin
