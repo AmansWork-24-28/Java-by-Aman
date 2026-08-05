@@ -1,7 +1,7 @@
 public class Throw {
     public static void main(String[] args) {
     	
-//    	int i=2;
+    	int i=2;
     	int i=0;
     	int j=0;
  
