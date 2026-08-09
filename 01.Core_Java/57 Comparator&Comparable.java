@@ -22,7 +22,6 @@ class Student
 	
 //	public int CompareTo(Student that)
 //	{
-////		return 0;
 //		if(this.age >that.age)
 //			return 1;
 //		else
