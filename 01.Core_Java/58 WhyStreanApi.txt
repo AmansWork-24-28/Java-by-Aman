@@ -1,0 +1,62 @@
+JAVA STREAM API – SIMPLE NOTES
+
+What is Stream API?
+
+ Stream API is used to process data from collections like List, Set, etc.
+ It makes data processing shorter and easier.
+ Introduced in Java 8.
+
+Real Project Example:
+Suppose a college application has 100 students.
+
+We get students from the database:
+
+List<Student> students = studentRepository.findAll();
+
+We want only students who passed (marks >= 40).
+
+Without Stream:
+for (Student s : students) {
+if (s.getMarks() >= 40) {
+passedStudents.add(s);
+}
+}
+
+With Stream:
+List<Student> passedStudents = students.stream()
+.filter(s -> s.getMarks() >= 40)
+.toList();
+
+Simple flow:
+
+Database
+↓
+List of Students
+↓
+Stream API
+↓
+Filter students
+↓
+Passed Students
+
+Common uses:
+
+* Filter data
+* Sort data
+* Search data
+* Remove duplicates
+* Convert/transform data
+* Calculate sum, average, max, min
+* Group data
+
+Important Stream methods:
+filter()   → select data
+map()      → transform data
+sorted()   → sort data
+distinct() → remove duplicates
+count()    → count elements
+forEach()  → perform action
+toList()   → convert to List
+
+Remember:
+Stream API = Easy way to process collection data.
